@@ -1,0 +1,304 @@
+/* ==reset.css================= */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img {
+	border:0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol, ul {
+	list-style:none;
+}
+caption, th {
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before, q:after {
+	content:'';
+}
+abbr, acronym {
+	border:0;
+}
+
+/* ==reset.css================= */
+*{
+	box-sizing: border-box;
+	font-family: Arial,"微軟正黑體";
+}
+body,html {
+	background-color: #f5f5f5;
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;	
+}
+
+.header {
+	height: 300px;
+	background-color: #424242;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-content {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.logo {
+	margin-right: 95px;
+	width: 117px;
+	height: 117px;
+	margin-top: 10px;
+}
+
+.ininput-info {
+	width: 430px;
+}
+
+label {
+	display: block;
+	color: #FFD366;
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+
+input {
+	height: 30px;
+	width: 250px;
+	border-radius: 10px;
+	padding-left: 10px;
+	border: 1px solid #FFD366;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	outline: none;
+	background-color: #7a7a7a;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+input::placeholder {
+	color: #ccc;
+}
+
+input:focus {
+
+	box-shadow: 0px 0px 2px  #FFD366,0px 0px 2px 1px  #FFD366;
+}
+
+
+.btn-result {
+	width: 120px;
+	height: 120px;
+	display: block;
+	border: none;
+	color: #424242;
+	font-size: 24px;	
+	cursor:pointer;
+    outline:none;
+    border-radius: 50%;
+    margin-top: 10px;
+    text-align: center;
+	position: relative;
+
+}
+
+.btn-result .bmi-btn {
+	display: block;
+	line-height: 120px;
+	border-radius: 50%;
+	transition: background-color .3s;
+	background-color: #FFD366;
+	border-color: #FFD366;
+	transition: all .4s;
+}
+
+.btn-result .bmi-btn:hover {
+	background-color: #DEA921;
+}
+
+.btn-result .bmi-round {
+	display: block;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	background-color: #424242;	
+	font-size: 14px;
+	padding-top: 23px;	
+}
+
+.bmi-round.r1:after,
+.bmi-round.r2:after,
+.bmi-round.r3:after,
+.bmi-round.r4:after,
+.bmi-round.r5:after,
+.bmi-round.r6:after {
+	position: absolute;
+	display: block;
+    left: 131px;
+    top: 44px;
+    width: 132px;
+    text-align: left;
+}
+
+.btn-result .bmi-round.r1{border:7px solid #86d73f;color: #86d73f;}
+.btn-result .bmi-round.r1:after {content:'理想'}
+.btn-result .bmi-round.r2{border:7px solid #31BAF9;color: #31BAF9;}
+.btn-result .bmi-round.r2:after {content:'過輕'}
+.btn-result .bmi-round.r3{border:7px solid #FF982D;color: #FF982D;}
+.btn-result .bmi-round.r3:after {content:'過重'}
+.btn-result .bmi-round.r4{border:7px solid #FF6C02;color: #FF6C02;}
+.btn-result .bmi-round.r4:after {content:'輕度肥胖'}
+.btn-result .bmi-round.r5{border:7px solid #FF6C02;color: #FF6C02;}
+.btn-result .bmi-round.r5:after {content:'中度肥胖'}
+.btn-result .bmi-round.r6{border:7px solid #FF1200;color: #FF1200;}
+.btn-result .bmi-round.r6:after {content:'重度肥胖'}
+
+.btn-result .bmi-round{font-size: 32px;font-weight: 900;}
+.btn-result .bmi-round > p + p{font-size: 16px;font-weight: 400;}
+
+.btn-result:focus,.btn-result:active{
+	background-color: #b1871a;
+}
+
+.round-loop{
+	width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100px;
+    border: 3px solid #424242;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+}
+
+.bmi-round.r1 .round-loop{background-color: #86d73f;}
+.bmi-round.r2 .round-loop{background-color: #31BAF9;}
+.bmi-round.r3 .round-loop{background-color: #FF982D;}
+.bmi-round.r4 .round-loop{background-color: #FF6C02;}
+.bmi-round.r5 .round-loop{background-color: #FF6C02;}
+.bmi-round.r6 .round-loop{background-color: #FF1200;}
+
+.bmi-round.close{display: none;	}
+.bmi-btn.close{display: none;}
+
+.content{
+	background-color: #f5f5f5;
+}
+
+.content h3 {
+	text-align: center;
+	font-size: 24px;
+	padding-top: 48px;
+	font-weight:700;
+	margin-bottom: 35px;
+
+}
+
+.content-info{
+	margin: 0 auto;
+	width: 760px;
+	padding-bottom: 74px;
+}
+
+.bmi-data li{
+	width: 100%;
+	height: 62px;
+	background-color: #fff;
+	margin-bottom: 16px;
+	line-height: 62px;
+	color: #4a4a4a; 
+}
+
+.bmi-data span:not(:last-child){
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 10px;	 
+}
+
+.bmi-data span.bmi-t{
+	font-size: 12px;
+	padding-left: 20px;
+	padding-top: 2px;
+}
+
+.bmi-data li small{
+	font-size: 12px;
+	font-weight: 400;
+	margin-right: 7px;
+}
+
+.bmi-data li{display: inline-flex;}
+
+.bmi-tit{
+	width: 140px;
+}
+
+.bmi-tit:before {
+	content: "";
+	float: left;
+    height: 62px;
+    margin-right: 20px;
+   	width: 7px;
+   	background-color: #ccc;
+}
+
+.bmi-bmi,.bmi-w,.bmi-h,.bmi-t{
+	width: 115px;
+}
+
+.bmi-tit.r1:before{background-color: #86d73f;}
+.bmi-tit.r2:before{background-color: #31BAF9;}
+.bmi-tit.r3:before{background-color: #FF982D;}
+.bmi-tit.r4:before{background-color: #FF6C02;}
+.bmi-tit.r5:before{background-color: #FF6C02;}
+.bmi-tit.r6:before{background-color: #FF1200;}
+
+a.del{
+	background-color:#fff;
+	border: 2px solid #ffbd1a;
+	padding: 2px 4px;
+	text-decoration: none;
+	color: #ffbd1a;
+	transition: all .4s;
+	font-weight: 900;	
+	border-radius: 4px;
+}
+a.del:hover{
+	background-color: #ffbd1a;
+	color: #fff;
+}
+
+footer{
+
+	clear: both;
+	width: 100%;	
+	bottom: 0;
+	height: 90px;
+	text-align: center;
+	padding: 18px;
+	background-color: #FFD366 ;
+}
+
+@media screen and (min-width:1200px){
+	
+}
+
